@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 95vw;
+    align-items: center;
+}
+
+#main-logo {
+    width: 20%;
+    height: 5%;
+}
