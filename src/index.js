@@ -2,7 +2,6 @@ import initialPageload from "./homepage";
 import { HomepageContent } from "./homepage";
 import AboutPage from "./about";
 const content = document.querySelector("#content");
-
 document.body.insertAdjacentElement("afterbegin", initialPageload());
 
 function loadHomepage() {
@@ -30,3 +29,5 @@ tabMenuOptions.addEventListener("click", (e) => {
     console.log(selectedOption);
   }
 });
+
+loadHomepage();
