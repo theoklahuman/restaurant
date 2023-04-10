@@ -1,8 +1,9 @@
 import initialPageload from "./homepage";
 import { HomepageContent } from "./homepage";
 import AboutPage from "./about";
-const content = document.querySelector("#content");
+const content = document.createElement("div");
 document.body.insertAdjacentElement("afterbegin", initialPageload());
+document.body.insertAdjacentElement("beforeend", content);
 
 function loadHomepage() {
   content.innerHTML = "";
@@ -26,7 +27,7 @@ tabMenuOptions.addEventListener("click", (e) => {
   } else if (selectedOption === "about") {
     loadAboutPage();
   } else {
-    console.log(selectedOption);
+    console.log(`The selected option is ${selectedOption}`);
   }
 });
 

@@ -11,7 +11,7 @@ export default function initialPageload() {
     mainLogo.src = logo;
     mainLogo.alt = "business logo";
     header.insertAdjacentElement("afterbegin", mainLogo);
-    const tabsItems = ["Home", "About", "Contact"];
+    const tabsItems = ["Home", "Menu", "About"];
     for (const item of tabsItems) {
         const tabItem = document.createElement("div");
         tabItem.textContent = item;
